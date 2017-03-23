@@ -5,15 +5,15 @@ option java_package = "org.codetome.riptide.protobuf";
 option java_multiple_files = true;
 option optimize_for = SPEED;
 
-import "data/protobuf_payload_kind.proto";
+import "data/payload_kind.proto";
 
-message ProtobufMessage {
+message ProtoMessage {
     string group = 1;
     string version = 2;
     string operation = 3;
     string pid = 4;
     string sender_id = 5;
     string payload_type = 6;
-    data.ProtobufPayloadKind payload_kind = 7;
+    data.PayloadKind payload_kind = 7;
     bytes payload = 8;
 }

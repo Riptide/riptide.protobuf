@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package data;
+option java_package = "org.codetome.riptide.protobuf";
+option java_multiple_files = true;
+option optimize_for = SPEED;
+
+enum OperationDispatchType {
+    CONSUMER = 0;
+    WORKER = 1;
+}

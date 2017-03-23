@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package data;
+option java_package = "org.codetome.riptide.protobuf";
+option java_multiple_files = true;
+option optimize_for = SPEED;
+
+enum MessageType {
+    SIMPLE_MESSAGE = 0;
+    PROCESS_FINISHING_MESSAGE = 1;
+    PROCESS_STARTING_MESSAGE = 2;
+}
