@@ -5,6 +5,9 @@ option java_package = "org.codetome.riptide.protobuf";
 option java_multiple_files = true;
 option optimize_for = SPEED;
 
-enum ReservedOperations {
-    PROCESS_STATE_CHANGE = 0;
+import "data/process_state.proto";
+
+message ProcessEventPayload {
+    string message = 1;
+    map<string, string> extra_data = 3;
 }
