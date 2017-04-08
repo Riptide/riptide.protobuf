@@ -6,6 +6,6 @@ option java_multiple_files = true;
 option optimize_for = SPEED;
 
 enum ReservedVersions {
-    DEFAULT_VERSION = 0;
-    ALL_VERSIONS = 1;
+    RT_DEFAULT_VERSION = 0;
+    RT_ALL_VERSIONS = 1;
 }

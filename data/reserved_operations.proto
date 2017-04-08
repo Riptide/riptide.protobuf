@@ -6,6 +6,6 @@ option java_multiple_files = true;
 option optimize_for = SPEED;
 
 enum ReservedOperations {
-    DEFAULT = 0;
-    PROCESS_STATE_CHANGE = 1;
+    RT_DEFAULT_OP = 0;
+    RT_PROCESS_STATE_CHANGE = 1;
 }
